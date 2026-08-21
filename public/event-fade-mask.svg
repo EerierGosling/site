@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" preserveAspectRatio="none">
+  <defs>
+    <filter id="b" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="0.05" />
+    </filter>
+  </defs>
+  <rect x="-1" y="-1" width="3" height="1.8" fill="white" filter="url(#b)" />
+</svg>

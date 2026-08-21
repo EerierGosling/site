@@ -1,259 +1,252 @@
 {
-  "projects": [
+  "events": [
     {
-      "name": "HacKnight Hackathon Website",
-      "date": "Spring 2024",
-      "description": "The website for HacKnight, a hackathon I organized!",
+      "name": "horizons",
+      "bgColor": "#F3E8D8",
+      "bgPattern": "/horizons/bg-pattern.svg",
+      "bgAngle": -19.54,
+      "logo": "/horizons/logo.svg",
+      "logoFullWidth": true,
+      "rightImage": "/horizons/jellybean.png",
+      "rightImageWidth": 604,
+      "rightImageHeight": 1072,
+      "date": "summer 2026",
+      "description": "horizons was a series of 6 hackathons around the world in san francisco, sydney, berlin, singapore, toronto, and cairo! we had 50 organizers and 350 attendees across all events. 650 teens worked for over 23,000 hours on over 1,700 approved technical projects as a part of horizons.",
       "links": [
         {
-          "name": "Repo",
+          "name": "github",
+          "url": "https://github.com/hackclub/horizons"
+        },
+        {
+          "name": "website",
+          "url": "https://horizons.hackclub.com"
+        },
+        {
+          "name": "hcb",
+          "url": "https://hcb.hackclub.com/horizons"
+        }
+      ]
+    },
+    {
+      "name": "shipwrecked",
+      "background": "/shipwrecked/background.png",
+      "logo": "/shipwrecked/logo.svg",
+      "rightImage": "/shipwrecked/goose.png",
+      "rightImageOutline": "/shipwrecked/goose-outline.svg",
+      "rightImageOutlineWidth": 885,
+      "rightImageOutlineHeight": 905,
+      "rightImageWidth": 865,
+      "rightImageHeight": 893,
+      "rightImageSpin": true,
+      "rightImageAlt": true,
+      "date": "august 8-11, 2025",
+      "description": "shipwrecked was a 4-day hackathon on an island in the boston harbor for 110 teens from around the world! in order to qualify, each attendee had to code for at least 60 hours on technical projects. 230 teens worked for over 16,000 hours on over 800 approved technical projects as a part of shipwrecked.",
+      "links": [
+        {
+          "name": "github",
+          "url": "https://github.com/hackclub/shipwrecked"
+        },
+        {
+          "name": "website",
+          "url": "https://shipwrecked.hackclub.com"
+        },
+        {
+          "name": "video",
+          "url": "https://www.youtube.com/watch?v=uXWMr0gdLJA"
+        },
+        {
+          "name": "hcb",
+          "url": "https://hcb.hackclub.com/shipwrecked"
+        }
+      ]
+    },
+    {
+      "name": "counterspell",
+      "background": "/counterspell/bg.png",
+      "billboard": "/counterspell/billboard.png",
+      "logo": "/counterspell/logo.png",
+      "smoke": "/counterspell/smoke.gif",
+      "rightImage": "/counterspell/cards.png",
+      "rightImageWidth": 1350,
+      "rightImageHeight": 1183,
+      "rightImageCards": true,
+      "rightImageSpin": true,
+      "logoCentered": true,
+      "date": "november 23-24, 2024",
+      "description": "counterspell was 50 concurrent game jams all around the world! each game jam was hosted by local students in the area who we supported through the process of organzing a game jam and funded their events. across all events, we had 1,500 attendees!",
+      "links": [
+        {
+          "name": "github",
+          "url": "https://github.com/hackclub/counterspell"
+        },
+        {
+          "name": "website",
+          "url": "https://counterspell.hackclub.com"
+        },
+        {
+          "name": "video",
+          "url": "https://www.youtube.com/watch?v=H5RPsCMl3uM"
+        },
+        {
+          "name": "hcb",
+          "url": "https://hcb.hackclub.com/counterspell"
+        }
+      ]
+    },
+    {
+      "name": "hacknight",
+      "more": true,
+      "background": "/hacknight/bg.png",
+      "backgroundMobile": "/hacknight/bg-mobile.png",
+      "backgroundPositionBottom": true,
+      "logo": "/hacknight/logo.webp",
+      "logoScale": 1.5,
+      "date": "june 1-2, 2024 • may 31 - june 1, 2025",
+      "description": "hacknight was the first hackathon i ran! it was two 36 hour hackathons at my high school - the first in 2024 and the second in 2025. the first year we had 70 attendees and the second year we had 80!",
+      "links": [
+        {
+          "name": "github",
           "url": "https://github.com/EerierGosling/HacKnight"
         },
         {
-          "name": "Website",
-          "url": "https://hacknight.co/"
+          "name": "website",
+          "url": "https://hacknight.co"
         }
-      ],
-      "tags": ["React"]
+      ]
     },
     {
-      "name": "MIT BWSI Build a CubeSat Challenge",
-      "date": "Winter 2024",
-      "note": "Won second place!",
-      "description": "My team and I built a CubeSat designed to detect power outages. I wrote the code that detects the power outages and an applet that generates synthetic power outage images.",
+      "name": "hack club satellite events - boston",
+      "background": "/satellites/bg.png",
+      "backgroundMobile": "/satellites/bg-mobile.png",
+      "more": true,
+      "date": "november 23, 2024 • march 15, 2025 • september 27, 2025",
+      "description": "i've organized the hack club satellite events in boston! we've run three of them: counterspell (game jam), scrapyard (hackathon), and daydream (game jam) at the microsoft nerd center. each one has had around 50 attendees!",
       "links": [
         {
-          "name": "Repo",
+          "name": "counterspell",
+          "url": "https://counterspell.hackclub.com/boston"
+        },
+        {
+          "name": "scrapyard",
+          "url": "https://scrapyard.hackclub.com/boston"
+        },
+        {
+          "name": "daydream",
+          "url": "https://daydream.hackclub.com/boston"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "retro sdk",
+      "date": "january 2026",
+      "description": "a python sdk for retro's internal api + db! handles auth, media upload, albums, comments, likes, and search so you can build on top of retro without reverse engineering the api yourself.",
+      "background": "/retro-sdk.png",
+      "backgroundPositionTop": true,
+      "links": [
+        {
+          "name": "repo",
+          "url": "https://github.com/EerierGosling/retro-sdk"
+        },
+        {
+          "name": "pypi",
+          "url": "https://pypi.org/project/retro-sdk/"
+        }
+      ]
+    },
+    {
+      "name": "retro slack bot",
+      "date": "january 2026",
+      "description": "a slack bot that forwards photos posted to retro into slack channels! built on top of my own retro sdk - deployed on hack club's slack, it can forward posts manually or proactively dm you asking whether to share a new upload.",
+      "background": "/retro-slack-bot.png",
+      "backgroundPositionTop": true,
+      "links": [
+        {
+          "name": "repo",
+          "url": "https://github.com/EerierGosling/retro-slack-bot"
+        },
+        {
+          "name": "app (hack club slack)",
+          "url": "https://hackclub.enterprise.slack.com/archives/D0A6127GQ3V"
+        }
+
+      ]
+    },
+    {
+      "name": "nand2tetris",
+      "date": "april 2026",
+      "description": "my solutions to the nand2tetris problem sets, building a computer from nand gates up through an os. i published my compiler for jack on npm!.",
+      "background": "/jackc.png",
+      "backgroundPositionTop": true,
+      "links": [
+        {
+          "name": "repo",
+          "url": "https://github.com/EerierGosling/nand2tetris"
+        },
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/jack-compiler"
+        }
+      ]
+    },
+    {
+      "name": "llp work",
+      "date": "june 2025",
+      "description": "trained adversarial classifiers on cifar-10 (pgd + fgsm attacks) and compared their input gradients to a pretrained diffusion model's, testing whether the two learn similar gradient patterns - a step toward one day distilling a classifier straight out of a diffusion model!",
+      "links": [
+        {
+          "name": "repo",
+          "url": "https://github.com/EerierGosling/llp-work"
+        }
+      ]
+    },
+    {
+      "name": "bwsi build a cubesat challenge",
+      "background": "/cubesat.png",
+      "date": "winter 2024",
+      "note": "won second place!",
+      "description": "my team and i built a cubesat designed to detect power outages. i wrote the code that detects the power outages and an applet that generates synthetic power outage images.",
+      "links": [
+        {
+          "name": "repo",
           "url": "https://github.com/ItsMeNoobieboy/KnightSat"
         },
         {
-          "name": "Video",
+          "name": "video",
           "url": "https://youtu.be/pVJEY5oZk4g?si=a1RX_y11sp9JEGzc&t=9722"
         },
         {
-          "name": "My section of the video",
+          "name": "my section of the video",
           "url": "https://youtu.be/pVJEY5oZk4g?si=dBxargf3CjGuLSLZ&t=9988"
         }
-      ],
-      "tags": ["Raspberry Pi", "Python"]
+      ]
     },
     {
-      "name": "Convolutional Neural Net from Scratch",
-      "date": "December 2024 to Today - Ongoing",
-      "description": "I've been working on building my own CNN from scratch based on a presentation (linked above) that I gave for MIT PRIMES CS Circle! Right now, the underlying math works and I'm working on training it to recognize shapes.",
+      "name": "convolutional neural net from scratch",
+      "date": "december 2024",
+      "description": "i built my own cnn from scratch based on a presentation (linked above) that i gave for mit primes cs circle! right now, the underlying math works and i'm working on training it to recognize shapes.",
       "links": [
         {
-          "name": "Repo",
+          "name": "repo",
           "url": "https://github.com/EerierGosling/Convolutional-Neural-Network"
         },
         {
-          "name": "Presentation",
+          "name": "presentation",
           "url": "https://math.mit.edu/research/highschool/primes/materials/2024/December/2-5-Egan.pdf"
         }
-      ],
-      "tags": ["Python"]
+      ]
     },
     {
-      "name": "Personal Website (This Website!)",
-      "date": "January 2025",
-      "description": "This website! The snow in the background is interactive and the background color is based on the time of day at your location (based on IP).",
+      "name": "personal website (this website!)",
+      "date": "august 2026",
+      "description": "shows the projects & events i've worked on + my blog! (obviously)",
       "links": [
         {
-          "name": "Repo",
+          "name": "repo",
           "url": "https://github.com/EerierGosling/Personal-Website"
         }
-      ],
-      "tags": ["React"]
-    },
-    {
-      "name": "MatchTube",
-      "date": "September 2024",
-      "note": "Won Best use of MongoDB Atlas and Honorable Mention for Most Creative!",
-      "description": "A dating app that uses your YouTube watch history to match you with similar people!",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/MatchTube"
-        },
-        {
-          "name": "Devpost",
-          "url": "https://devpost.com/software/matchtube"
-        }
-      ],
-      "tags": ["React", "Flask", "Hugging Face"]
-    },
-    {
-      "name": "Global Report",
-      "date": "March 2024",
-      "note": "Won the Spirit Award!",
-      "description": "A website civilians can use to be aware of danger in their area.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Global-Report"
-        }
-      ],
-      "tags": ["React", "Arduino"]
-    },
-    {
-      "name": "Job Interview Vocab Trainer",
-      "date": "January 2024",
-      "note": "Won Best Technical Execution!",
-      "description": "A website that allows non-native English speakers to practice job interviews and learn words they didn't know.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/ItsMeNoobieboy/HackTheCastleII"
-        },
-        {
-          "name": "Devpost",
-          "url": "https://devpost.com/software/job-interview-simulator"
-        }
-      ],
-      "tags": ["Python", "Svelte", "JavaScript", "HTML", "CSS", "OpenAI API"]
-    },
-    {
-      "name": "Mark Rover: A Modular Mars Rover",
-      "date": "July 2023",
-      "description": "Mark Rover is a modular rover designed to be able to adapt to a variety of situations.",
-      "links": [
-        {
-          "name": "Presentation",
-          "url": "https://docs.google.com/presentation/d/1dubXn3H92zlAgE315F2llNSzRbir0hmS52xVyEhy9DI/"
-        }
-      ],
-      "tags": ["Arduino"]
-    },
-    {
-      "name": "QUAL App: An App for my Middle School's Science Department",
-      "date": "Summer 2022-2023",
-      "description": "This app will help run the end-of-year test for my Middle School's Science Department.",
-      "tags": ["Swift"]
-    },
-    {
-      "name": "Nigel: A Deep Sea Robot",
-      "date": "August 2022",
-      "description": "Nigel (named after the pelican from Finding Nemo) is a deep-sea robot designed to save endangered species from ground trawling nets.",
-      "links": [
-        {
-          "name": "Presentation",
-          "url": "https://docs.google.com/presentation/d/1hF5GwGTGZKrF80mlp128KA3_qe08fYb1O4ZtxzqGCfE"
-        }
-      ],
-      "tags": ["Arduino"]
-    },
-    {
-      "name": "Tom Nook - Slack Bot",
-      "date": "January 2025",
-      "description": "Tom Nook is the welcome bot for my personal channel (#eeriergosling) on Hack Club Slack. When you join my channel, Tom Nook greets you and 'forces you' to buy something from his shop. You type in what you want and he sells it to you for a randomly generated amount of bells, which you pay by replying with emojis totaling to that amount.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Tom-Nook"
-        }
-      ],
-      "tags": ["Python"]
-    },
-    {
-      "name": "Cat's Schrödinger",
-      "date": "July 2023",
-      "description": "A game where you play as Schrödinger's cat and traverse the timeline to escape his house. The theme was Roles Reversed.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Cats-Schrodinger"
-        },
-        {
-          "name": "itch.io",
-          "url": "https://itsmenoobieboy.itch.io/cats-schrodinger"
-        }
-      ],
-      "tags": ["Unity", "C#"]
-    },
-    {
-      "name": "Informedead",
-      "date": "May 2024",
-      "note": "Came top 7!",
-      "description": "Devices that can communicate off the grid. The theme was to create something that could help you survive the zombie apocalypse.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Informedead"
-        }
-      ],
-      "tags": ["Arduino", "ESP32"]
-    },
-    {
-      "name": "Periodic Cooking",
-      "date": "Febuary 2024",
-      "description": "A Unity-based chemistry & cooking game inspired by food and a periodic table.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Periodic-Cooking"
-        }
-      ],
-      "tags": ["Unity", "C#", "Arduino"]
-    },
-    {
-      "name": "Snow Day Sledding",
-      "date": "January 2023",
-      "description": "An app that lets you see all the sledding, skating, and skiing areas near you! The user can earn XP as they travel to each location.",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Snow-Day-Sledding"
-        },
-        {
-          "name": "Presentation",
-          "url": "https://docs.google.com/presentation/d/1acBdPOdk9REWFreQ4EXicJParBPiaYJC-Tnyn3GmBP0/edit?usp=sharing"
-        }
-      ],
-      "tags": ["Swift", "Unity", "C#"]
-    },
-    {
-      "name": "Duck Duck",
-      "date": "May 2023",
-      "description": "Duck Duck is a platformer puzzle game where you use the rising water to help you collect the rubber duckies in a shipwreck!",
-      "links": [
-        {
-          "name": "Repo",
-          "url": "https://github.com/EerierGosling/Duck-Duck"
-        },
-        {
-          "name": "itch.io",
-          "url": "https://eeriergosling.itch.io/duckduck"
-        }
-      ],
-      "tags": ["Unity", "C#"]
-    },
-    {
-      "name": "Spikey Boot: A Climbing Boot",
-      "date": "August 2021",
-      "description": "A climbing boot designed to make climbing easier through integrating retractable spikes and a CAM!",
-      "links": [
-        {
-          "name": "Presentation",
-          "url": "https://cambridge.nuvustudio.com/posts/602793-final-presentation"
-        }
-      ],
-      "tags": ["Arduino"]
-    },
-    {
-      "name": "Upcoming Events Board",
-      "date": "January 2023",
-      "description": "The Upcoming Events Board allows anyone to organize a local activity and get to know the people in their town, especially people who might be similar to themselves. This lets people such as new immigrants make connections in their new country of residence and find possible opportunities.",
-      "links": [
-        {
-          "name": "Replit",
-          "url": "https://replit.com/@SofiaEgan/Nobles-Hackathon?v=1"
-        },
-        {
-          "name": "Devpost",
-          "url": "https://devpost.com/software/upcoming-events-board"
-        }
-      ],
-      "tags": ["HTML", "JavaScript", "CSS"]
+      ]
     }
   ]
 }

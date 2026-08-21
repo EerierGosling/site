@@ -1,5 +1,10 @@
 .container {
-  background-color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: left;
   border-radius: 30px;
   padding: 10px 30px 20px 30px;
@@ -11,6 +16,31 @@
   box-sizing: border-box;
 }
 
+.project-image-wrapper {
+  position: relative;
+  height: 150px;
+  margin: -10px -30px 15px -30px;
+}
+
+
+.project-date {
+  margin: -8px 0 15px 0;
+  font-size: 0.8em;
+  opacity: 0.65;
+}
+
+.project-links {
+  margin: 0;
+}
+
+.gh-icon {
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.project-links-separator {
+  opacity: 0.6;
+}
 
 h2 {
   font-size: 1.3em;

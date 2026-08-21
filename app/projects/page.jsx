@@ -4,52 +4,47 @@ import { useState, useEffect, useMemo } from 'react';
 import '../globals.css';
 import './Projects.css';
 import projectsData from './projects.json';
-import tags_dict from '../components/tags_dict.js';
 import ProjectItem from '../components/ProjectItem.jsx';
-import Tag from '../components/Tag.jsx';
+import EventItem from '../components/EventItem.jsx';
 
 function Projects() {
 
   const [projects, setProjects] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [showMoreEvents, setShowMoreEvents] = useState(false);
 
   useEffect(() => {
     setProjects(projectsData.projects);
+    setEvents(projectsData.events);
   }, []);
 
-  const [selectedTags, setSelectedTags] = useState(Object.keys(tags_dict));
-
-  const handleCheckboxChange = (event) => {
-    const { value, checked } = event.target;
-    if (checked) {
-      setSelectedTags(prevItems => [...prevItems, value]);
-    } else {
-      setSelectedTags(prevItems => prevItems.filter(item => item !== value));
-    }
-  };
-
-  const showProject = (project, index) => {
-    for (const tag of project.tags) {
-      if (selectedTags.includes(tag)) {
-        return <ProjectItem project={project} key={index} />;
-      }
-    }
-    return;
-  };
+  const mainEvents = events.filter(event => !event.more);
+  const moreEvents = events.filter(event => event.more);
 
   return (
     <div className="projects-content">
-      <div className="tag-select-container">
-        <div className="tags">
-          {Object.keys(tags_dict).map((tag, index) => (
-            <li key={index} className="tag-select-item">
-              <input className="checkbox-tag" type="checkbox" value={tag} onChange={handleCheckboxChange} defaultChecked />
-              <Tag key={index} tag={tags_dict[tag]}/>
-            </li>
-          ))}
+      <h1 className="section-title">events</h1>
+      <section className="events-container">
+        {mainEvents.map((event, index) => <EventItem event={event} key={index} />)}
+      </section>
+      {moreEvents.length > 0 && (
+        <div className="more-events">
+          <button
+            className="more-events-toggle"
+            onClick={() => setShowMoreEvents(prev => !prev)}
+          >
+            {showMoreEvents ? 'show less events ▲' : 'more events ▼'}
+          </button>
+          {showMoreEvents && (
+            <section className="events-container">
+              {moreEvents.map((event, index) => <EventItem event={event} key={index} />)}
+            </section>
+          )}
         </div>
-      </div>
+      )}
+      <h1 className="section-title">projects</h1>
       <section className="projects-container">
-        {projects.map((project, index) => showProject(project, index))}
+        {projects.map((project, index) => <ProjectItem project={project} key={index} />)}
       </section>
     </div>
   );
