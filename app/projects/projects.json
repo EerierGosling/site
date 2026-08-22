@@ -275,6 +275,10 @@
           "url": "https://github.com/EerierGosling/Personal-Website"
         }
       ]
+    },
+    {
+      "name": "hackathon projects",
+      "description": "beyond running them myself, i go to a lot of hackathons! most of the projects i've built have been for various hackathons/game jams i've gone to - you can find them scattered on my github :)"
     }
   ]
 }
