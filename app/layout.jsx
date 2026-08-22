@@ -10,16 +10,16 @@ export default function Layout({ children }) {
     <html lang="en">
       <head>
         <title>
-          Sofia Egan
+          sofia egan
         </title>
         <link rel="icon" type="image/x-icon" href="/frog_pfp.png"></link>
         <meta name="description" content="my personal website!" />
         <meta name="keywords" content="Sofia Egan, eeriergosling, hackathons, projects, software development, boston, mit, hack club" />
-        <meta name="author" content="Sofia Egan" />
+        <meta name="author" content="sofia egan" />
 
-        <meta property="og:title" content="Sofia Egan" />
+        <meta property="og:title" content="sofia egan" />
         <meta property="og:description" content="my personal website!" />
-        <meta property="og:image" content="https://github.com/user-attachments/assets/977b0f29-d4ee-49e6-9475-821760156f50" />
+        <meta property="og:image" content="https://eerier.dev/screenshot.png" />
         <meta property="og:type" content="website" />
       </head>
       
