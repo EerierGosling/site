@@ -27,6 +27,34 @@
         }
       ]
     },
+        {
+      "name": "campfire flagship",
+      "background": "/flagship/bg.png",
+      "backgroundPositionBottom": true,
+      "logo": "/flagship/logo.png",
+      "logoCentered": true,
+      "logoTrueCenter": true,
+      "logoScale": 1.3,
+      "logoMidScale": 1.5,
+      "logoPaddingTop": "20px",
+      "logoShadow": true,
+      "date": "february 20-22, 2026",
+      "description": "campfire flagship was a 3-day game jam in los angeles run in partnership with <a class=\"link\" href=\"https://opensauce.com\">open sauce</a> for 60 teens from around the world! at the event, participants were mentored by youtube creators (listed on the website) who helped them with their projects. in order to qualify, each attendee had to code for at least 60 hours on technical projects. 85 teens worked for over 6,000 hours on over 250 approved technical projects as a part of campfire flagship.",
+      "links": [
+        {
+          "name": "website",
+          "url": "https://flagship.hackclub.com"
+        },
+        {
+          "name": "video",
+          "url": "https://www.youtube.com/watch?v=8gaSCj1-6ck&t=8m6s"
+        },
+        {
+          "name": "hcb",
+          "url": "https://hcb.hackclub.com/campfire-flagship"
+        }
+      ]
+    },
     {
       "name": "shipwrecked",
       "background": "/shipwrecked/background.png",

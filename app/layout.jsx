@@ -35,7 +35,9 @@ export default function Layout({ children }) {
             </nav>
           </div>
         </div>
-        {children}
+        <div className="page-content">
+          {children}
+        </div>
         <div className="footer"></div>
         <Analytics/>
       </body>

@@ -38,9 +38,10 @@ export default function Home() {
             at <a className="link" href="https://hackclub.com">hack club</a>, i run programs to get teens into tech! joining hack club as a freshman in high school taught me that you can just <i>do things</i> if you simply believe you can, 
             and i've been trying to inspire other teens to do the same since. i've led {" "}
             <a className="link tooltip" href="https://horizons.hackclub.com">horizons<span className="tooltip-text">a series of 6 hackathons around the world in san francisco, sydney, berlin, singapore, toronto, and cairo (summer 2026)</span></a>, {" "}
+            <span className="tooltip"><a className="link" href="https://flagship.hackclub.com">campfire flagship</a><span className="tooltip-text">a 3-day game jam in los angeles run in partnership with <a className="link" href="https://opensauce.com">open sauce</a> for 60 teens from around the world (february 20-22, 2026)</span></span>, {" "}
             <a className="link tooltip" href="https://shipwrecked.hackclub.com">shipwrecked<span className="tooltip-text">a 4-day hackathon on an island in the boston harbor for 110 teens from around the world (august 8-11, 2025)</span></a>, and {" "}
             <a className="link tooltip" href="https://counterspell.hackclub.com"> counterspell<span className="tooltip-text">50 concurrent game jams all around the world (november 23-24, 2024)</span></a>, {" "}
-            which together inspired at least 4,000 teens to build technical projects and cost nearly half a million dollars.
+            which together inspired at least 5,000 teens to build technical projects and cost nearly half a million dollars.
           </p>
           <p className="subtitle">
             {commitHash && (

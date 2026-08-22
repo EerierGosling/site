@@ -44,7 +44,7 @@ const EventItem = ({ event }) => {
             </div>
           )}
           {event.billboard && (
-            <div className={`event-header${event.logoFullWidth ? ' event-header-flush' : ''}${event.logoCentered ? ' event-header-centered' : ''}`}>
+            <div className={`event-header${event.logoFullWidth ? ' event-header-flush' : ''}${event.logoCentered ? ' event-header-centered' : ''}${event.logoTrueCenter ? ' event-header-centered-full' : ''}`}>
               <div className="event-logo-stack">
                 <Image
                   className="event-billboard"
@@ -57,7 +57,7 @@ const EventItem = ({ event }) => {
             </div>
           )}
         </div>
-        <div className={`event-header${event.logoFullWidth ? ' event-header-flush' : ''}${event.logoCentered ? ' event-header-centered' : ''}`}>
+        <div className={`event-header${event.logoFullWidth ? ' event-header-flush' : ''}${event.logoCentered ? ' event-header-centered' : ''}${event.logoTrueCenter ? ' event-header-centered-full' : ''}`}>
           {event.logo && (
             event.billboard || event.smoke ? (
               <div className="event-logo-stack">
@@ -81,12 +81,16 @@ const EventItem = ({ event }) => {
               </div>
             ) : (
               <Image
-                className={event.logoFullWidth ? 'event-logo-full' : event.logoCentered ? 'event-logo-centered' : 'event-logo'}
+                className={`${event.logoFullWidth ? 'event-logo-full' : event.logoCentered ? 'event-logo-centered' : 'event-logo'}${event.logoShadow ? ' event-logo-shadow' : ''}`}
                 src={event.logo}
                 alt={`${event.name} logo`}
                 width={event.logoFullWidth ? 1210 : event.logoCentered ? 1173 : 432}
                 height={event.logoFullWidth ? 234 : event.logoCentered ? 512 : 272}
-                style={event.logoScale ? {'--logo-scale': event.logoScale} : undefined}
+                style={{
+                  ...(event.logoScale ? {'--logo-scale': event.logoScale} : undefined),
+                  ...(event.logoMidScale ? {'--logo-mid-scale': event.logoMidScale} : undefined),
+                  ...(event.logoPaddingTop ? {marginTop: event.logoPaddingTop} : undefined),
+                }}
               />
             )
           )}
@@ -130,7 +134,9 @@ const EventItem = ({ event }) => {
             </p>
           )}
           {event.date && <p className="event-date">{event.date}</p>}
-          {event.description && <p className="event-description">{event.description}</p>}
+          {event.description && (
+            <p className="event-description" dangerouslySetInnerHTML={{ __html: event.description }} />
+          )}
         </div>
       )}
     </div>

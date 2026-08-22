@@ -26,6 +26,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #1A1A1E;
@@ -33,6 +35,10 @@ body {
   background-size: 100% auto;
   background-position: top center;
   background-repeat: repeat-y;
+}
+
+.page-content {
+  flex: 1 0 auto;
 }
 
 .App {
@@ -205,10 +211,9 @@ button:focus-visible {
 .tooltip .tooltip-text {
   visibility: hidden;
   opacity: 0;
-  pointer-events: none;
   transition: opacity 0.2s;
   position: absolute;
-  bottom: 125%;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--raisin_black);
