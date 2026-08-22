@@ -1,4 +1,5 @@
 import '../globals.css';
+import '../projects/Projects.css';
 import './Blog.css';
 import Link from 'next/link';
 import { getAllPosts } from './lib/posts';

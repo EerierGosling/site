@@ -103,6 +103,20 @@ nav ul li {
   margin-left: 70px;
 }
 
+@media (max-width: 450px) {
+  .header-links {
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .header-link {
+    margin-left: 0;
+  }
+}
+
 .header-link-text {
   font-size: 1.3em;
   font-weight: 700;
@@ -188,6 +202,24 @@ button:focus-visible {
 
   h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 455px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 385px) {
+  h1 {
+    font-size: 1.9rem;
   }
 }
 

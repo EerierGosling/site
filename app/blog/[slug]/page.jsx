@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import '../../globals.css';
+import '../../projects/Projects.css';
 import '../Blog.css';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
