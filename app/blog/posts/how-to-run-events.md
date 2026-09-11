@@ -1,7 +1,7 @@
 ---
 title: "how to run an event at hack club"
 date: "august 21, 2026"
-description: "everything i've learned running programs at hack club over the last two years in one 59-page guide!"
+description: "(almost) everything i've learned running programs at hack club over the last two years in one guide!"
 ---
 
 i've run [counterspell](https://counterspell.hackclub.com), [shipwrecked](https://shipwrecked.hackclub.com), [campfire flagship](https://flagship.hackclub.com), and [horizons](https://counterspell.hackclub.com) along with some local events ([hacknight](https://hacknight.co) at my high school and boston's [counterspell](https://counterspell.hackclub.com/boston), [scrapyard](https://scrapyard.hackclub.com/boston), and [daydream](https://daydream.hackclub.com/boston)). each one taught me something different, and each time i've improved on things and made new mistakes.
